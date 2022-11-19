@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="default-theme">
+  <head>
+    <title>HOME-TRAMONTO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/restaurants_logo.jpg"
+        alt="restaurants logo"
+      />
+      <div class="theme-links">
+        <ul>
+          <li id="default-theme" class="default-theme">
+            <a herf="#">Default Theme</a>
+          </li>
+          <li id="dark-theme" class="dark-theme"><a herf="#">Dark Theme</a></li>
+        </ul>
+      </div>
+      <nav class="topnav">
+        <div class="links">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="staff.html">STAFF</a>
+          <a href="reservation.html">RESERVATION</a>
+        </div>
+        <form class="search-form">
+          <input type="text" placeholder="Search.." />
+          <button>search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="res-pic">
+        <div class="box-container1">
+          <div class="table-picture table-1">
+            <img src="images/2person.jpg" alt="2person" />
+            <p class="table-num">Table [<span>1</span>]</p>
+            <p class="table-name">LOCATION: center</p>
+            <p class="table-capacity">CAPACITY: <span>2</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+
+          <div class="table-picture table-2">
+            <img src="images/4person.jpg" alt="4person" />
+            <p class="table-num">Table [<span>2</span>]</p>
+            <p class="table-name">LOCATION: center</p>
+            <p class="table-capacity">CAPACITY: <span>4</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+
+          <div class="table-picture table-3">
+            <img src="images/8person.jpg" alt="8person" />
+            <p class="table-num">Table [<span>3</span>]</p>
+            <p class="table-name">LOCATION: Right, next to the restroom</p>
+            <p class="table-capacity">CAPACITY: <span>8</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+
+          <div class="table-picture table-4">
+            <img src="images/5person.jpg" alt="5person" />
+            <p class="table-num">Table [<span>4</span>]</p>
+            <p class="table-name">LOCATION: Right, next to the kitchen</p>
+            <p class="table-capacity">CAPACITY: <span>5</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+
+          <div class="table-picture table-5">
+            <img src="images/6person_c.jpg" alt="6person" />
+            <p class="table-num">Table [<span>5</span>]</p>
+            <p class="table-name">LOCATION: Left, next to the wall</p>
+            <p class="table-capacity">CAPACITY: <span>6</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+
+          <div class="table-picture table-6">
+            <img src="images/6personw.jpg" alt="6person" />
+            <p class="table-num">Table [<span>6</span>]</p>
+            <p class="table-name">LOCATION: Left, next to the window</p>
+            <p class="table-capacity">CAPACITY: <span>6</span></p>
+            <button class="BOOK">BOOK</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div>
+          <a href="https://www.twitter.com/">
+            <img src="images/twitter.jpeg" alt="twitter" />
+          </a>
+          <a href="https://www.gmail.com/">
+            <img alt="e-mail" src="images/email.jpeg" />
+          </a>
+          <a href="https://www.Facebook.com/">
+            <img alt="facebook" src="images/facebook.jpg" />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/resturant.js"></script>
+  <script>
+    checkAvailableTables();
+  </script>
+</html>

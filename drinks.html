@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="default-theme">
+  <head>
+    <title>Drinks-TRAMONTO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/restaurants_logo.jpg"
+        alt="restaurants logo"
+      />
+      <div class="theme-links">
+        <ul>
+          <li id="default-theme" class="default-theme">
+            <a herf="#">Default Theme</a>
+          </li>
+          <li id="dark-theme" class="dark-theme"><a herf="#">Dark Theme</a></li>
+        </ul>
+      </div>
+      <nav class="topnav">
+        <div class="links">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="staff.html">STAFF</a>
+          <a href="reservation.html">RESERVATION</a>
+        </div>
+        <form class="search-form">
+          <input type="text" placeholder="Search.." />
+          <button>search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="heading-fordranks"><span>Drinks</span></h1>
+      <div class="container">
+        <div class="card">
+          <div class="image image1"></div>
+          <div class="info">
+            <h2>mojito</h2>
+            <p>
+              The signature, lime juice, soda water, and mint. Its combination
+              of sweetness, citrus, and herbaceous mint flavours is intended to
+              complement the rum and everyone's favourite minty cocktail 30RS
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image image2">
+            <div class="info">
+              <h2>coffee</h2>
+              <p>A sweet, creamy cafe latté inspired by coffee in Rome 25RS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg>
+        <filter id="wavy1">
+          <feturbulence
+            x="0"
+            y="0"
+            baseFrequency="0.2"
+            numOctaves="5"
+            seed="1"
+          ></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+      <svg>
+        <filter id="wavy2">
+          <feturbulence
+            x="0"
+            y="0"
+            baseFrequency="0.02"
+            numOctaves="5"
+            seed="1"
+          ></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+      <svg>
+        <filter id="wavy3">
+          <feturbulence
+            x="0"
+            y="0"
+            baseFrequency="0.1"
+            numOctaves="5"
+            seed="1"
+          ></feturbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div>
+          <a href="https://www.twitter.com/">
+            <img src="images/twitter.jpeg" alt="twitter" />
+          </a>
+          <a href="https://www.gmail.com/">
+            <img alt="e-mail" src="images/email.jpeg" />
+          </a>
+          <a href="https://www.Facebook.com/">
+            <img alt="facebook" src="images/facebook.jpg" />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/resturant.js"></script>
+</html>

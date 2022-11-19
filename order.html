@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="default-theme">
+  <head>
+    <title>order-TRAMONTO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/restaurants_logo.jpg"
+        alt="restaurants logo"
+      />
+      <div class="theme-links">
+        <ul>
+          <li id="default-theme" class="default-theme">
+            <a herf="#">Default Theme</a>
+          </li>
+          <li id="dark-theme" class="dark-theme"><a herf="#">Dark Theme</a></li>
+        </ul>
+      </div>
+      <nav class="topnav">
+        <div class="links">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="staff.html">STAFF</a>
+          <a href="reservation.html">RESERVATION</a>
+        </div>
+        <form class="search-form">
+          <input type="text" placeholder="Search.." />
+          <button>search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <!-- order section starts  -->
+
+      <div class="flex" style="display: flex">
+        <section class="dishes" id="dishes">
+          <h1 class="heading-order">To <span> ORDER </span> <a style="font-size: 10px; float: right; padding-right: 20px;" href="#" onclick="sortItems()">Sort</a></h1>
+
+          <div class="categories">
+            <h2>Entree</h2>
+            <hr />
+          </div>
+          <br />
+          <div class="box-container">
+            <div class="box" data-price="150">
+              <img src="images/pasta.jpg" alt="pasta" />
+              <h3>pasta</h3>
+              <span>150RS</span>
+              <input type="number" placeholder="quantity" min="1" /> 
+              <a class="btn">add to order</a>
+            </div>
+
+            <div class="box" data-price="120">
+              <img src="images/pizza1.jpg" alt="pizza" />
+              <h3>pizza</h3>
+              <span>120SR</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+          </div>
+          <div class="categories">
+            <h2>salad</h2>
+            <hr />
+          </div>
+          <br />
+          <div class="box-container">
+            <div class="box" data-price="65">
+              <img src="images/orzo_salad.jpg" alt="orzo salad" />
+              <h3>Orzo salad</h3>
+              <span>65RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+
+            <div class="box" data-price="75">
+              <img src="images/burrata_salad.jpg" alt="salad" />
+              <h3>Burrata salad</h3>
+              <span>75RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+          </div>
+          <div class="categories">
+            <h2>sweets</h2>
+            <hr />
+          </div>
+          <br />
+          <div class="box-container">
+            <div class="box" data-price="55">
+              <img src="images/ice_cream.jpg" alt="ice-cream" />
+              <h3>ice cream</h3>
+              <span>55RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+
+            <div class="box" data-price="80">
+              <img src="images/t.jpg" alt="tiramisu" />
+              <h3>tasty tiramisu</h3>
+              <span>80RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+          </div>
+          <div class="categories">
+            <h2>drinks</h2>
+            <hr />
+          </div>
+          <br />
+          <div class="box-container">
+            <div class="box" data-price="30">
+              <img src="images/mojito.jpeg" alt="mojito" />
+              <h3>Mojito</h3>
+              <span>30RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+
+            <div class="box" data-price="25">
+              <img src="images/coffee.jpg" alt="coffee" />
+              <h3>Coffee</h3>
+              <span>25RS</span>
+              <input type="number" placeholder="quantity" min="1" />
+              <a class="btn">add to order</a>
+            </div>
+          </div>
+        </section>
+        <div class="order-table order-details-table">
+          <table id="invoices_table" class="order-details">
+            <caption>Cart</caption>
+            <thead>
+              <th>Food</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </thead>
+            <tbody id="order-details">
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- order section ends -->
+
+      <div class="print-back">
+        <div id="order_table_form" class="form-row">
+          <select name="tables">
+            <option value="table-select">Select table</option>
+            <option value="1">table 1</option>
+            <option value="3">table 3</option>
+            <option value="4">table 4</option>
+            <option value="7">table 7</option>
+          </select>
+          <button class="btn order-btn">Order</button>
+        </div>
+        <!--table-->
+
+        <hr id="order_table" />
+
+        <div class="order-table">
+          <table id="invoices_table">
+            <caption>All Orders</caption>
+            <thead>
+              <th>table number</th>
+              <th>total Price</th>
+              <th>print invoice</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3</td>
+                <td>40.98$</td>
+                <td>
+                  <input
+                    class="print"
+                    type="button"
+                    onclick="alert('printing invoice')"
+                    value="print invoice "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>55.98$</td>
+                <td>
+                  <input
+                    class="print"
+                    type="button"
+                    onclick="alert('printing invoice')"
+                    value="print invoice "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>60.98$</td>
+                <td>
+                  <input
+                    class="print"
+                    type="button"
+                    onclick="alert('printing invoice')"
+                    value="print invoice "
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <hr />
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div>
+          <a href="https://www.twitter.com/">
+            <img src="images/twitter.jpeg" alt="twitter" />
+          </a>
+          <a href="https://www.gmail.com/">
+            <img alt="e-mail" src="images/email.jpeg" />
+          </a>
+          <a href="https://www.Facebook.com/">
+            <img alt="facebook" src="images/facebook.jpg" />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/resturant.js"></script>
+  <script>
+    getAvailableTables();
+  </script>
+</html>

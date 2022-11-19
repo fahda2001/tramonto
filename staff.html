@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="default-theme">
+  <head>
+    <title>STAFF-TRAMONTO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="resturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/restaurants_logo.jpg"
+        alt="restaurants logo"
+      />
+      <div class="theme-links">
+        <ul>
+          <li id="default-theme" class="default-theme">
+            <a herf="#">Default Theme</a>
+          </li>
+          <li id="dark-theme" class="dark-theme"><a herf="#">Dark Theme</a></li>
+        </ul>
+      </div>
+      <nav class="topnav">
+        <div class="links">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="staff.html">STAFF</a>
+          <a href="reservation.html">RESERVATION</a>
+        </div>
+        <form class="search-form">
+          <input type="text" placeholder="Search.." />
+          <button>search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="STAFF" id="STAFF">
+        <h1 class="heading">Daily progress of our staff</h1>
+
+        <div class="box-container">
+          <div id="0" class="box">
+            <img src="images/waitress.jpg" />
+            <h3>Olivia Jackson</h3>
+            <h6 id="rating1" class="rating-total">0</h6>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5>Waitress</h5>
+            <h5>Female</h5>
+          </div>
+
+          <div id="1" class="box">
+            <img src="images/chef2.jpg" />
+            <h3>Emily William</h3>
+            <h6 id="rating2" class="rating-total">0</h6>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5>Chef</h5>
+            <h5>Female</h5>
+          </div>
+
+          <div id="2" class="box">
+            <img src="images/manager.jpeg" />
+            <h3>Liam James</h3>
+            <h6 id="rating3" class="rating-total">0</h6>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5>Manager</h5>
+            <h5>Male</h5>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div>
+          <a href="https://www.twitter.com/">
+            <img src="images/twitter.jpeg" alt="twitter" />
+          </a>
+          <a href="https://www.gmail.com/">
+            <img alt="e-mail" src="images/email.jpeg" />
+          </a>
+          <a href="https://www.Facebook.com/">
+            <img alt="facebook" src="images/facebook.jpg" />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/resturant.js"></script>
+  <script>
+    getStaffRating();
+  </script>
+</html>

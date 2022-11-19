@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="default-theme">
+  <head>
+    <title>RESERVATION-TRAMONTO</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resturant.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/restaurants_logo.jpg"
+        alt="restaurants logo"
+      />
+      <div class="theme-links">
+        <ul>
+          <li id="default-theme" class="default-theme">
+            <a herf="#">Default Theme</a>
+          </li>
+          <li id="dark-theme" class="dark-theme"><a herf="#">Dark Theme</a></li>
+        </ul>
+      </div>
+      <nav class="topnav">
+        <div class="links">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="order.html">ORDER</a>
+          <a href="staff.html">STAFF</a>
+          <a href="reservation.html">RESERVATION</a>
+        </div>
+        <form class="search-form">
+          <input type="text" placeholder="Search.." />
+          <button>search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <div class="box2">
+        <section class="banner">
+          <div class="card-container">
+            <div class="card-content">
+              <br />
+              <h3>Reservation</h3>
+
+              <form
+                id="reservation_form"
+                action="find.html"
+              >
+                <div class="form-row">
+                  <input
+                    id="full_name"
+                    name="full_name"
+                    type="text"
+                    placeholder="Full Name"
+                  />
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="text"
+                    placeholder="05xxxxxxxx"
+                  />
+                </div>
+
+                <div class="form-row">
+                  <select id="days" name="days">
+                    <option value="">Select Day</option>
+                    <option value="sunday">Sunday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                  </select>
+
+                  <label for="time"></label>
+                  <input id="time" name="time" type="time" />
+                </div>
+
+                <div class="form-row">
+                  <input
+                    id="persons_num"
+                    name="persons_num"
+                    type="number"
+                    placeholder="Number of persons"
+                    min="1"
+                  />
+                  <button class="Find">
+                    <a href="find.html" onclick=""> </a> FIND TABLE
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div>
+          <a href="https://www.twitter.com/">
+            <img src="images/twitter.jpeg" alt="twitter" />
+          </a>
+          <a href="https://www.gmail.com/">
+            <img alt="e-mail" src="images/email.jpeg" />
+          </a>
+          <a href="https://www.Facebook.com/">
+            <img alt="facebook" src="images/facebook.jpg" />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/resturant.js"></script>
+  <script>
+    document.getElementById('reservation_form').addEventListener('submit', validateReservationForm);
+  </script>
+</html>
